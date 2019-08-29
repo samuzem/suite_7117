@@ -155,13 +155,28 @@ array (
       array (
         0 => 
         array (
-          0 => 
+          
+          0 => array(
+              
+              
+              'name' => 'title',
+              'comment' => 'The title of the contact',
+              'label' => 'LBL_TITLE',
+          ) , 
+            
+            
+            
+            
+            
+            
+            
+          1 => 
           array (
             'name' => 'first_name',
             'comment' => 'First name of the contact',
             'label' => 'LBL_FIRST_NAME',
           ),
-          1 => 
+          2 => 
           array (
             'name' => 'last_name',
             'comment' => 'Last name of the contact',
@@ -183,13 +198,8 @@ array (
         ),
         2 => 
         array (
+     
           0 => 
-          array (
-            'name' => 'title',
-            'comment' => 'The title of the contact',
-            'label' => 'LBL_TITLE',
-          ),
-          1 => 
           array (
             'name' => 'department',
             'label' => 'LBL_DEPARTMENT',
