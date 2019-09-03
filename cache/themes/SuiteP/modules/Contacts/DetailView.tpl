@@ -25,7 +25,6 @@
 {if !$config.enable_action_menu}
 <div class="buttons">
 {if $bean->aclAccess("edit")}<input title="{$APP.LBL_EDIT_BUTTON_TITLE}" accessKey="{$APP.LBL_EDIT_BUTTON_KEY}" class="button primary" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.return_id.value='{$id}'; _form.action.value='EditView';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Edit" id="edit_button" value="{$APP.LBL_EDIT_BUTTON_LABEL}">{/if} 
-{if $bean->aclAccess("edit")}<input title="{$APP.LBL_DUPLICATE_BUTTON_TITLE}" accessKey="{$APP.LBL_DUPLICATE_BUTTON_KEY}" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.isDuplicate.value=true; _form.action.value='EditView'; _form.return_id.value='{$id}';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Duplicate" value="{$APP.LBL_DUPLICATE_BUTTON_LABEL}" id="duplicate_button">{/if} 
 {if $bean->aclAccess("delete")}<input title="{$APP.LBL_DELETE_BUTTON_TITLE}" accessKey="{$APP.LBL_DELETE_BUTTON_KEY}" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='ListView'; _form.action.value='Delete'; if(confirm('{$APP.NTC_DELETE_CONFIRMATION}')) SUGAR.ajaxUI.submitForm(_form); return false;" type="submit" name="Delete" value="{$APP.LBL_DELETE_BUTTON_LABEL}" id="delete_button">{/if} 
 {if $bean->aclAccess("edit") && $bean->aclAccess("delete")}<input title="{$APP.LBL_DUP_MERGE}" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.return_id.value='{$id}'; _form.action.value='Step1'; _form.module.value='MergeRecords';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Merge" value="{$APP.LBL_DUP_MERGE}" id="merge_duplicate_button">{/if} 
 <input class="button hidden" id="send_confirm_opt_in_email" title="{$APP.LBL_SEND_CONFIRM_OPT_IN_EMAIL}" onclick="var _form = document.getElementById('formDetailView');_form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.return_id.value='{$fields.id.value}'; _form.action.value='sendConfirmOptInEmail'; _form.module.value='Contacts'; _form.module_tab.value='Contacts';_form.submit();" name="send_confirm_opt_in_email" disabled="1" type="button" value="{$APP.LBL_SEND_CONFIRM_OPT_IN_EMAIL}"/>
@@ -96,7 +95,6 @@
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">ACTIONS<span class="suitepicon suitepicon-action-caret"></span></a>
 <ul class="dropdown-menu">
 <li>{if $bean->aclAccess("edit")}<input title="{$APP.LBL_EDIT_BUTTON_TITLE}" accessKey="{$APP.LBL_EDIT_BUTTON_KEY}" class="button primary" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.return_id.value='{$id}'; _form.action.value='EditView';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Edit" id="edit_button" value="{$APP.LBL_EDIT_BUTTON_LABEL}">{/if} </li>
-<li>{if $bean->aclAccess("edit")}<input title="{$APP.LBL_DUPLICATE_BUTTON_TITLE}" accessKey="{$APP.LBL_DUPLICATE_BUTTON_KEY}" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.isDuplicate.value=true; _form.action.value='EditView'; _form.return_id.value='{$id}';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Duplicate" value="{$APP.LBL_DUPLICATE_BUTTON_LABEL}" id="duplicate_button">{/if} </li>
 <li>{if $bean->aclAccess("delete")}<input title="{$APP.LBL_DELETE_BUTTON_TITLE}" accessKey="{$APP.LBL_DELETE_BUTTON_KEY}" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='ListView'; _form.action.value='Delete'; if(confirm('{$APP.NTC_DELETE_CONFIRMATION}')) SUGAR.ajaxUI.submitForm(_form); return false;" type="submit" name="Delete" value="{$APP.LBL_DELETE_BUTTON_LABEL}" id="delete_button">{/if} </li>
 <li>{if $bean->aclAccess("edit") && $bean->aclAccess("delete")}<input title="{$APP.LBL_DUP_MERGE}" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.return_id.value='{$id}'; _form.action.value='Step1'; _form.module.value='MergeRecords';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Merge" value="{$APP.LBL_DUP_MERGE}" id="merge_duplicate_button">{/if} </li>
 <li><input class="button hidden" id="send_confirm_opt_in_email" title="{$APP.LBL_SEND_CONFIRM_OPT_IN_EMAIL}" onclick="var _form = document.getElementById('formDetailView');_form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.return_id.value='{$fields.id.value}'; _form.action.value='sendConfirmOptInEmail'; _form.module.value='Contacts'; _form.module_tab.value='Contacts';_form.submit();" name="send_confirm_opt_in_email" disabled="1" type="button" value="{$APP.LBL_SEND_CONFIRM_OPT_IN_EMAIL}"/></li>
@@ -132,22 +130,22 @@
 <div class="col-xs-12 col-sm-4 label col-1-label">
 
 
-{capture name="label" assign="label"}{sugar_translate label='LBL_FIRST_NAME' module='Contacts'}{/capture}
+{capture name="label" assign="label"}{sugar_translate label='LBL_TITLE' module='Contacts'}{/capture}
 {$label|strip_semicolon}:
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="first_name"  >
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="title"  >
 
-{if !$fields.first_name.hidden}
+{if !$fields.title.hidden}
 {counter name="panelFieldCount" print=false}
 
-{if strlen($fields.first_name.value) <= 0}
-{assign var="value" value=$fields.first_name.default_value }
+{if strlen($fields.title.value) <= 0}
+{assign var="value" value=$fields.title.default_value }
 {else}
-{assign var="value" value=$fields.first_name.value }
+{assign var="value" value=$fields.title.value }
 {/if} 
-<span class="sugar_field" id="{$fields.first_name.name}">{$fields.first_name.value}</span>
+<span class="sugar_field" id="{$fields.title.name}">{$fields.title.value}</span>
 {/if}
 
 <div class="inlineEditIcon col-xs-hidden">
@@ -206,20 +204,22 @@
 <div class="col-xs-12 col-sm-4 label col-1-label">
 
 
-{capture name="label" assign="label"}{sugar_translate label='LBL_OFFICE_PHONE' module='Contacts'}{/capture}
+{capture name="label" assign="label"}{sugar_translate label='LBL_FIRST_NAME' module='Contacts'}{/capture}
 {$label|strip_semicolon}:
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="phone" field="phone_work"  class="phone">
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="first_name"  >
 
-{if !$fields.phone_work.hidden}
+{if !$fields.first_name.hidden}
 {counter name="panelFieldCount" print=false}
 
-{if !empty($fields.phone_work.value)}
-{assign var="phone_value" value=$fields.phone_work.value }
-{sugar_phone value=$phone_value usa_format="0"}
-{/if}
+{if strlen($fields.first_name.value) <= 0}
+{assign var="value" value=$fields.first_name.default_value }
+{else}
+{assign var="value" value=$fields.first_name.value }
+{/if} 
+<span class="sugar_field" id="{$fields.first_name.name}">{$fields.first_name.value}</span>
 {/if}
 
 <div class="inlineEditIcon col-xs-hidden">
@@ -239,18 +239,18 @@
 <div class="col-xs-12 col-sm-4 label col-2-label">
 
 
-{capture name="label" assign="label"}{sugar_translate label='LBL_MOBILE_PHONE' module='Contacts'}{/capture}
+{capture name="label" assign="label"}{sugar_translate label='LBL_OFFICE_PHONE' module='Contacts'}{/capture}
 {$label|strip_semicolon}:
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="phone" field="phone_mobile"  class="phone">
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="phone" field="phone_work"  class="phone">
 
-{if !$fields.phone_mobile.hidden}
+{if !$fields.phone_work.hidden}
 {counter name="panelFieldCount" print=false}
 
-{if !empty($fields.phone_mobile.value)}
-{assign var="phone_value" value=$fields.phone_mobile.value }
+{if !empty($fields.phone_work.value)}
+{assign var="phone_value" value=$fields.phone_work.value }
 {sugar_phone value=$phone_value usa_format="0"}
 {/if}
 {/if}
@@ -276,22 +276,20 @@
 <div class="col-xs-12 col-sm-4 label col-1-label">
 
 
-{capture name="label" assign="label"}{sugar_translate label='LBL_TITLE' module='Contacts'}{/capture}
+{capture name="label" assign="label"}{sugar_translate label='LBL_MOBILE_PHONE' module='Contacts'}{/capture}
 {$label|strip_semicolon}:
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="title"  >
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="phone" field="phone_mobile"  class="phone">
 
-{if !$fields.title.hidden}
+{if !$fields.phone_mobile.hidden}
 {counter name="panelFieldCount" print=false}
 
-{if strlen($fields.title.value) <= 0}
-{assign var="value" value=$fields.title.default_value }
-{else}
-{assign var="value" value=$fields.title.value }
-{/if} 
-<span class="sugar_field" id="{$fields.title.name}">{$fields.title.value}</span>
+{if !empty($fields.phone_mobile.value)}
+{assign var="phone_value" value=$fields.phone_mobile.value }
+{sugar_phone value=$phone_value usa_format="0"}
+{/if}
 {/if}
 
 <div class="inlineEditIcon col-xs-hidden">
@@ -344,10 +342,10 @@
 
 
 
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
+<div class="col-xs-12 col-sm-12 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-2 label col-1-label">
 
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_ACCOUNT_NAME' module='Contacts'}{/capture}
@@ -355,7 +353,7 @@
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="relate" field="account_name"  >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="relate" field="account_name" colspan='3' >
 
 {if !$fields.account_name.hidden}
 {counter name="panelFieldCount" print=false}
@@ -375,13 +373,17 @@
 
 </div>
 
+</div>
+
+
+<div class="row detail-view-row">
 
 
 
 <div class="col-xs-12 col-sm-6 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-2-label">
+<div class="col-xs-12 col-sm-4 label col-1-label">
 
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_FAX_PHONE' module='Contacts'}{/capture}
@@ -408,17 +410,13 @@
 
 </div>
 
-</div>
-
-
-<div class="row detail-view-row">
 
 
 
-<div class="col-xs-12 col-sm-12 detail-view-row-item">
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-2 label col-1-label">
+<div class="col-xs-12 col-sm-4 label col-2-label">
 
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_EMAIL_ADDRESS' module='Contacts'}{/capture}
@@ -426,7 +424,7 @@
 </div>
 
 
-<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="varchar" field="email1" colspan='3' >
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="email1"  >
 
 {if !$fields.email1.hidden}
 {counter name="panelFieldCount" print=false}
@@ -450,10 +448,10 @@
 
 
 
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
+<div class="col-xs-12 col-sm-12 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-2 label col-1-label">
 
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_PRIMARY_ADDRESS' module='Contacts'}{/capture}
@@ -461,7 +459,7 @@
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="primary_address_street"  >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="varchar" field="primary_address_street" colspan='3' >
 
 {if !$fields.primary_address_street.hidden}
 {counter name="panelFieldCount" print=false}
@@ -501,13 +499,17 @@ value="{$fields.primary_address_postalcode.value|escape:'html_entity_decode'|esc
 
 </div>
 
+</div>
+
+
+<div class="row detail-view-row">
 
 
 
 <div class="col-xs-12 col-sm-6 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-2-label">
+<div class="col-xs-12 col-sm-4 label col-1-label">
 
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_ALTERNATE_ADDRESS' module='Contacts'}{/capture}
@@ -555,17 +557,13 @@ value="{$fields.alt_address_postalcode.value|escape:'html_entity_decode'|escape:
 
 </div>
 
-</div>
-
-
-<div class="row detail-view-row">
 
 
 
 <div class="col-xs-12 col-sm-6 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-4 label col-2-label">
 
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_DESCRIPTION' module='Contacts'}{/capture}
@@ -589,10 +587,73 @@ value="{$fields.alt_address_postalcode.value|escape:'html_entity_decode'|escape:
 
 </div>
 
+</div>
+
+
+<div class="row detail-view-row">
 
 
 
 <div class="col-xs-12 col-sm-6 detail-view-row-item">
+
+
+<div class="col-xs-12 col-sm-4 label col-1-label">
+
+
+{capture name="label" assign="label"}{sugar_translate label='LBL_MARKETING' module='Contacts'}{/capture}
+{$label|strip_semicolon}:
+</div>
+
+
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="bool" field="marketing_c"  >
+
+{if !$fields.marketing_c.hidden}
+{counter name="panelFieldCount" print=false}
+
+{if strval($fields.marketing_c.value) == "1" || strval($fields.marketing_c.value) == "yes" || strval($fields.marketing_c.value) == "on"} 
+{assign var="checked" value='checked="checked"'}
+{else}
+{assign var="checked" value=""}
+{/if}
+<input type="checkbox" class="checkbox" name="{$fields.marketing_c.name}" id="{$fields.marketing_c.name}" value="$fields.marketing_c.value" disabled="true" {$checked}>
+{/if}
+
+<div class="inlineEditIcon col-xs-hidden">
+<span class="suitepicon suitepicon-action-edit"></span>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
+
+
+<div class="col-xs-12 col-sm-4 label col-2-label">
+
+
+{capture name="label" assign="label"}{sugar_translate label='LBL_ASSIGNED_TO_NAME' module='Contacts'}{/capture}
+{$label|strip_semicolon}:
+</div>
+
+
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="relate" field="assigned_user_name"  >
+
+{if !$fields.assigned_user_name.hidden}
+{counter name="panelFieldCount" print=false}
+
+<span id="assigned_user_id" class="sugar_field" data-id-value="{$fields.assigned_user_id.value}">{$fields.assigned_user_name.value}</span>
+{/if}
+
+<div class="inlineEditIcon col-xs-hidden">
+<span class="suitepicon suitepicon-action-edit"></span>
+</div>
+</div>
+
+
 </div>
 
 </div>
@@ -608,17 +669,19 @@ value="{$fields.alt_address_postalcode.value|escape:'html_entity_decode'|escape:
 <div class="col-xs-12 col-sm-2 label col-1-label">
 
 
-{capture name="label" assign="label"}{sugar_translate label='LBL_ASSIGNED_TO_NAME' module='Contacts'}{/capture}
+{capture name="label" assign="label"}{sugar_translate label='LBL_BILANCIO' module='Contacts'}{/capture}
 {$label|strip_semicolon}:
 </div>
 
 
-<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="relate" field="assigned_user_name" colspan='3' >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="decimal" field="bilancio_c" colspan='3' >
 
-{if !$fields.assigned_user_name.hidden}
+{if !$fields.bilancio_c.hidden}
 {counter name="panelFieldCount" print=false}
 
-<span id="assigned_user_id" class="sugar_field" data-id-value="{$fields.assigned_user_id.value}">{$fields.assigned_user_name.value}</span>
+<span class="sugar_field" id="{$fields.bilancio_c.name}">
+{sugar_number_format var=$fields.bilancio_c.value precision=8 }
+</span>
 {/if}
 
 <div class="inlineEditIcon col-xs-hidden">

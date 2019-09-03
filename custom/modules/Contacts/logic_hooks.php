@@ -11,12 +11,22 @@ $hook_array['after_save'] = Array();
 $hook_array['after_save'][] = Array(1, 'Update Portal', 'modules/Contacts/updatePortal.php','updatePortal', 'updateUser'); 
 $hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'modules/Contacts/ContactsJjwg_MapsLogicHook.php','ContactsJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo'); 
 
+/*
 $hook_array['before_save'][] = Array(
-    4,
+    5,
     'dewfqjwfe',
     'custom/modules/Contacts/logic_hooks1.php',
     'Contactslogichook1',
     'indirizzo'
+    );
+*/
+
+$hook_array['before_save'][] = Array(
+    5,
+    'dewfqjwfe',
+    'custom/modules/Contacts/logic_hooks2.php',
+    'Contactslogichook3',
+    'metodo3'
     );
 
 

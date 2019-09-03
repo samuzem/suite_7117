@@ -13,6 +13,16 @@ include('custom/metadata/opportunities_contacts_1MetaData.php');
 
  
  //WARNING: The contents of this file are auto-generated
+include('custom/metadata/contacts_osy_contocorrente_1MetaData.php');
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
+include('custom/metadata/osy_contocorrente_osy_transazioni_1MetaData.php');
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
 include('custom/metadata/osy_supplies_cases_2MetaData.php');
 
 

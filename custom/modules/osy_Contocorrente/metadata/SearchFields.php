@@ -1,5 +1,5 @@
 <?php
-// created: 2019-08-29 12:20:53
+// created: 2019-08-29 15:22:27
 $searchFields['osy_Contocorrente'] = array (
   'name' => 
   array (

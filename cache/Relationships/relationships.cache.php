@@ -8086,6 +8086,192 @@
     'join_key_lhs' => 'opportunities_contacts_1opportunities_ida',
     'join_key_rhs' => 'opportunities_contacts_1contacts_idb',
   ),
+  'contacts_osy_contocorrente_1' => 
+  array (
+    'name' => 'contacts_osy_contocorrente_1',
+    'true_relationship_type' => 'many-to-many',
+    'from_studio' => true,
+    'relationships' => 
+    array (
+      'contacts_osy_contocorrente_1' => 
+      array (
+        'lhs_module' => 'Contacts',
+        'lhs_table' => 'contacts',
+        'lhs_key' => 'id',
+        'rhs_module' => 'osy_Contocorrente',
+        'rhs_table' => 'osy_contocorrente',
+        'rhs_key' => 'id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'contacts_osy_contocorrente_1_c',
+        'join_key_lhs' => 'contacts_osy_contocorrente_1contacts_ida',
+        'join_key_rhs' => 'contacts_osy_contocorrente_1osy_contocorrente_idb',
+      ),
+    ),
+    'table' => 'contacts_osy_contocorrente_1_c',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      1 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      2 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'contacts_osy_contocorrente_1contacts_ida',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      4 => 
+      array (
+        'name' => 'contacts_osy_contocorrente_1osy_contocorrente_idb',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'contacts_osy_contocorrente_1spk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'contacts_osy_contocorrente_1_alt',
+        'type' => 'alternate_key',
+        'fields' => 
+        array (
+          0 => 'contacts_osy_contocorrente_1contacts_ida',
+          1 => 'contacts_osy_contocorrente_1osy_contocorrente_idb',
+        ),
+      ),
+    ),
+    'lhs_module' => 'Contacts',
+    'lhs_table' => 'contacts',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_Contocorrente',
+    'rhs_table' => 'osy_contocorrente',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'contacts_osy_contocorrente_1_c',
+    'join_key_lhs' => 'contacts_osy_contocorrente_1contacts_ida',
+    'join_key_rhs' => 'contacts_osy_contocorrente_1osy_contocorrente_idb',
+  ),
+  'osy_contocorrente_osy_transazioni_1' => 
+  array (
+    'name' => 'osy_contocorrente_osy_transazioni_1',
+    'true_relationship_type' => 'one-to-many',
+    'from_studio' => true,
+    'relationships' => 
+    array (
+      'osy_contocorrente_osy_transazioni_1' => 
+      array (
+        'lhs_module' => 'osy_Contocorrente',
+        'lhs_table' => 'osy_contocorrente',
+        'lhs_key' => 'id',
+        'rhs_module' => 'osy_transazioni',
+        'rhs_table' => 'osy_transazioni',
+        'rhs_key' => 'id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'osy_contocorrente_osy_transazioni_1_c',
+        'join_key_lhs' => 'osy_contocorrente_osy_transazioni_1osy_contocorrente_ida',
+        'join_key_rhs' => 'osy_contocorrente_osy_transazioni_1osy_transazioni_idb',
+      ),
+    ),
+    'table' => 'osy_contocorrente_osy_transazioni_1_c',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      1 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      2 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'osy_contocorrente_osy_transazioni_1osy_contocorrente_ida',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      4 => 
+      array (
+        'name' => 'osy_contocorrente_osy_transazioni_1osy_transazioni_idb',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'osy_contocorrente_osy_transazioni_1spk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'osy_contocorrente_osy_transazioni_1_ida1',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'osy_contocorrente_osy_transazioni_1osy_contocorrente_ida',
+        ),
+      ),
+      2 => 
+      array (
+        'name' => 'osy_contocorrente_osy_transazioni_1_alt',
+        'type' => 'alternate_key',
+        'fields' => 
+        array (
+          0 => 'osy_contocorrente_osy_transazioni_1osy_transazioni_idb',
+        ),
+      ),
+    ),
+    'lhs_module' => 'osy_Contocorrente',
+    'lhs_table' => 'osy_contocorrente',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_transazioni',
+    'rhs_table' => 'osy_transazioni',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'osy_contocorrente_osy_transazioni_1_c',
+    'join_key_lhs' => 'osy_contocorrente_osy_transazioni_1osy_contocorrente_ida',
+    'join_key_rhs' => 'osy_contocorrente_osy_transazioni_1osy_transazioni_idb',
+  ),
   'osy_supplies_cases_2' => 
   array (
     'name' => 'osy_supplies_cases_2',
@@ -15157,6 +15343,212 @@
         'name' => 'deleted',
         'type' => 'bool',
         'default' => 0,
+      ),
+    ),
+  ),
+  'osy_contocorrente_modified_user' => 
+  array (
+    'name' => 'osy_contocorrente_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_Contocorrente',
+    'rhs_table' => 'osy_contocorrente',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'osy_contocorrente_created_by' => 
+  array (
+    'name' => 'osy_contocorrente_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_Contocorrente',
+    'rhs_table' => 'osy_contocorrente',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'osy_contocorrente_assigned_user' => 
+  array (
+    'name' => 'osy_contocorrente_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_Contocorrente',
+    'rhs_table' => 'osy_contocorrente',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'securitygroups_osy_contocorrente' => 
+  array (
+    'name' => 'securitygroups_osy_contocorrente',
+    'lhs_module' => 'SecurityGroups',
+    'lhs_table' => 'securitygroups',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_Contocorrente',
+    'rhs_table' => 'osy_contocorrente',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'securitygroups_records',
+    'join_key_lhs' => 'securitygroup_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'osy_Contocorrente',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'char',
+        'len' => '36',
+        'required' => true,
+        'default' => '',
+      ),
+      1 => 
+      array (
+        'name' => 'securitygroup_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      2 => 
+      array (
+        'name' => 'record_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      3 => 
+      array (
+        'name' => 'module',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'modified_user_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      6 => 
+      array (
+        'name' => 'created_by',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      7 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'required' => true,
+        'default' => '0',
+      ),
+    ),
+  ),
+  'osy_transazioni_modified_user' => 
+  array (
+    'name' => 'osy_transazioni_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_transazioni',
+    'rhs_table' => 'osy_transazioni',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'osy_transazioni_created_by' => 
+  array (
+    'name' => 'osy_transazioni_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_transazioni',
+    'rhs_table' => 'osy_transazioni',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'osy_transazioni_assigned_user' => 
+  array (
+    'name' => 'osy_transazioni_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_transazioni',
+    'rhs_table' => 'osy_transazioni',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'securitygroups_osy_transazioni' => 
+  array (
+    'name' => 'securitygroups_osy_transazioni',
+    'lhs_module' => 'SecurityGroups',
+    'lhs_table' => 'securitygroups',
+    'lhs_key' => 'id',
+    'rhs_module' => 'osy_transazioni',
+    'rhs_table' => 'osy_transazioni',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'securitygroups_records',
+    'join_key_lhs' => 'securitygroup_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'osy_transazioni',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'char',
+        'len' => '36',
+        'required' => true,
+        'default' => '',
+      ),
+      1 => 
+      array (
+        'name' => 'securitygroup_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      2 => 
+      array (
+        'name' => 'record_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      3 => 
+      array (
+        'name' => 'module',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'modified_user_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      6 => 
+      array (
+        'name' => 'created_by',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      7 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'required' => true,
+        'default' => '0',
       ),
     ),
   ),

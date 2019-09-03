@@ -50,11 +50,7 @@ array (
             'name' => 'iban_c',
             'label' => 'LBL_IBAN',
           ),
-          1 => 
-          array (
-            'name' => 'saldomedio_c',
-            'label' => 'LBL_SALDOMEDIO',
-          ),
+          1 => '',
         ),
         3 => 
         array (
@@ -68,6 +64,15 @@ array (
             'name' => 'datadinascita_c',
             'label' => 'LBL_DATADINASCITA',
           ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'saldomedio_c',
+            'label' => 'LBL_SALDOMEDIO',
+          ),
+          1 => '',
         ),
       ),
     ),

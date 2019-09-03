@@ -1,5 +1,5 @@
 <?php
-// created: 2019-08-27 17:50:25
+// created: 2019-09-03 17:12:03
 $mod_strings = array (
   'LBL_ID' => 'ID:',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -194,6 +194,10 @@ $mod_strings = array (
   'LBL_AOS_INVOICES' => 'Invoices',
   'LBL_AOS_QUOTES' => 'Quotes',
   'LBL_PROJECT_CONTACTS_1_FROM_PROJECT_TITLE' => 'Project Contacts from Project Title',
+  'LBL_BILANCIO' => 'Bilancio',
+  'LBL_CONTACTS_OSY_CONTOCORRENTE_1_FROM_OSY_CONTOCORRENTE_TITLE' => 'Conto Corrente',
+  'LBL_MARKETING' => 'marketing',
+  'LBL_TIPOMARKETING' => 'LBL_TIPOMARKETING',
   'LBL_CONTACTS_OPPORTUNITIES_1_FROM_OPPORTUNITIES_TITLE' => 'Opportunities',
   'LBL_OPPORTUNITIES_CONTACTS_1_FROM_OPPORTUNITIES_TITLE' => 'Contacts',
   'LBL_CONTACTS_OPPORTUNITIES_2_FROM_OPPORTUNITIES_TITLE' => 'Contatti_opportunità',

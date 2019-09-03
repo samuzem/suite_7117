@@ -1711,3 +1711,1634 @@ Tue Aug 27 10:00:33 2019 [12838][1][FATAL] Chart class not found.
 Tue Aug 27 10:00:34 2019 [7701][1][FATAL] Chart class not found.
 Tue Aug 27 17:50:24 2019 [7703][1][FATAL] Chart class not found.
 Tue Aug 27 17:50:25 2019 [32348][1][FATAL] Chart class not found.
+Wed Aug 28 11:36:43 2019 [10836][1][FATAL] Chart class not found.
+Wed Aug 28 11:36:44 2019 [10838][1][FATAL] Chart class not found.
+Wed Aug 28 11:36:55 2019 [10862][1][FATAL] Chart class not found.
+Wed Aug 28 11:36:56 2019 [10862][1][FATAL] Chart class not found.
+Thu Aug 29 10:52:48 2019 [5116][1][FATAL] Chart class not found.
+Thu Aug 29 10:52:49 2019 [9647][1][FATAL] Chart class not found.
+Thu Aug 29 11:47:26 2019 [10820][1][FATAL] Chart class not found.
+Thu Aug 29 11:47:27 2019 [11041][1][FATAL] Chart class not found.
+Thu Aug 29 11:47:28 2019 [9647][1][FATAL] Chart class not found.
+Thu Aug 29 14:14:26 2019 [10976][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:14:26 2019 [10976][1][FATAL]  Query Failed:  SELECT  osy_transazioni.id , osy_transazioni.assigned_user_id , osy_transazioni.name  , jt0.user_name assigned_user_name , jt0.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod, osy_transazioni.created_by  FROM osy_transazioni   LEFT JOIN  users jt0 ON osy_transazioni.assigned_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0 where osy_transazioni.deleted=0 ORDER BY osy_transazioni.date_entered DESC LIMIT 0,21: MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:14:40 2019 [17844][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:14:40 2019 [17844][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('db307565-1f81-2197-e596-5d67c1873110','Transazione1','2019-08-29 12:14:40','2019-08-29 12:14:40','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:14:40 2019 [17844][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:14:40 2019 [17844][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:14:40 2019 [17844][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:14:47 2019 [17864][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:14:47 2019 [17864][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('45e73cb0-739b-bc7c-2c4e-5d67c1853368','Transazione1','2019-08-29 12:14:47','2019-08-29 12:14:47','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:14:47 2019 [17864][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:14:47 2019 [17864][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:14:47 2019 [17864][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:14:57 2019 [17947][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:14:57 2019 [17947][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('b16167f0-58e0-9f92-5b30-5d67c1c36b09','Transazione1','2019-08-29 12:14:57','2019-08-29 12:14:57','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:14:57 2019 [17947][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:14:57 2019 [17947][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:14:57 2019 [17947][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:15:08 2019 [17573][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:15:08 2019 [17573][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('3f3eef13-c45c-4f2a-3762-5d67c12de775','transazione1','2019-08-29 12:15:08','2019-08-29 12:15:08','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:15:08 2019 [17573][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:15:08 2019 [17573][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:15:08 2019 [17573][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:15:36 2019 [10976][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:15:36 2019 [10976][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('a0e8fe3a-19e0-04cd-3da9-5d67c1c67d5b','Transazione1','2019-08-29 12:15:36','2019-08-29 12:15:36','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:15:36 2019 [10976][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:15:36 2019 [10976][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:15:36 2019 [10976][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:16:07 2019 [17844][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:16:07 2019 [17844][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('17efcc42-93db-8776-8d29-5d67c26ef682','transazion','2019-08-29 12:16:07','2019-08-29 12:16:07','1','1','ciasjcvAIDFJS',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:16:07 2019 [17844][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:16:07 2019 [17844][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:16:07 2019 [17844][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:17:01 2019 [17609][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:17:01 2019 [17609][1][FATAL]  Query Failed:  SELECT  osy_transazioni.id , osy_transazioni.assigned_user_id , osy_transazioni.name  , jt0.user_name assigned_user_name , jt0.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod, osy_transazioni.created_by  FROM osy_transazioni   LEFT JOIN  users jt0 ON osy_transazioni.assigned_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0 where osy_transazioni.deleted=0 ORDER BY osy_transazioni.date_entered DESC LIMIT 0,21: MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:17:09 2019 [17864][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:17:09 2019 [17864][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('3ed060a1-0ec6-b953-8de2-5d67c25f92fc','Transazione1','2019-08-29 12:17:09','2019-08-29 12:17:09','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:17:09 2019 [17864][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:17:09 2019 [17864][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:17:09 2019 [17864][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:17:25 2019 [15061][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:17:25 2019 [15061][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('11a91d16-0935-8ba2-3d6a-5d67c29feef0','Transazione1','2019-08-29 12:17:25','2019-08-29 12:17:25','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:17:25 2019 [15061][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:17:25 2019 [15061][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:17:25 2019 [15061][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:19:55 2019 [17609][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:19:55 2019 [17609][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('4650741e-1cbf-0c6b-acf8-5d67c266fc1d','transazione1','2019-08-29 12:19:55','2019-08-29 12:19:55','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:19:55 2019 [17609][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:19:55 2019 [17609][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:19:55 2019 [17609][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:22:14 2019 [17947][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:22:14 2019 [17947][1][FATAL]  Query Failed:  SELECT  osy_transazioni.id , osy_transazioni.assigned_user_id , osy_transazioni.name  , jt0.user_name assigned_user_name , jt0.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod, osy_transazioni.created_by  FROM osy_transazioni   LEFT JOIN  users jt0 ON osy_transazioni.assigned_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0 where osy_transazioni.deleted=0 ORDER BY osy_transazioni.date_entered DESC LIMIT 0,21: MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:22:29 2019 [9647][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:22:29 2019 [9647][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('94bccc26-5aa0-f8c0-4961-5d67c39a770d','transazione1','2019-08-29 12:22:29','2019-08-29 12:22:29','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:22:29 2019 [9647][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:22:29 2019 [9647][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:22:29 2019 [9647][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:23:53 2019 [9647][1][FATAL] SugarPHPMailer encountered an error: Invalid address:  (to): 
+Thu Aug 29 14:23:53 2019 [9647][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:23:53 2019 [9647][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('22e7c41d-1adb-0dc1-c055-5d67c340691a','Transazione1','2019-08-29 12:23:53','2019-08-29 12:23:53','1','1','',0,'dd855a42-9825-fce8-08de-5d63f3ccd983'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:23:53 2019 [9647][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:23:53 2019 [9647][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:23:53 2019 [9647][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(true)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:26:44 2019 [11042][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:26:44 2019 [11042][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('69470adb-933e-86ce-b8b8-5d67c43d4221','transazione12','2019-08-29 12:26:44','2019-08-29 12:26:44','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:26:44 2019 [11042][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:26:44 2019 [11042][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:26:44 2019 [11042][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:36:59 2019 [18734][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:36:59 2019 [18734][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('e73409ca-dc3d-8b08-da33-5d67c6532ef6','transazioni','2019-08-29 12:36:59','2019-08-29 12:36:59','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:36:59 2019 [18734][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:36:59 2019 [18734][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:36:59 2019 [18734][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:42:26 2019 [9632][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:42:26 2019 [9632][1][FATAL] Error inserting into table: osy_transazioni: Query Failed: INSERT INTO osy_transazioni (id,name,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id)
+					VALUES ('d8eb5c5c-d9ce-229a-b728-5d67c815c7b4','transazione1','2019-08-29 12:42:26','2019-08-29 12:42:26','1','1','',0,'1'): MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 14:42:26 2019 [9632][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 14:42:26 2019 [9632][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Thu Aug 29 14:42:26 2019 [9632][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 114...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO osy...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(osy_transazioni))
+#5 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(684): SugarBean->save(false)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_save()
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#10 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#11 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#12 {main}
+Thu Aug 29 14:43:12 2019 [18734][1][FATAL] Mysqli_query failed.
+Thu Aug 29 14:43:12 2019 [18734][1][FATAL]  Query Failed:  SELECT  osy_transazioni.id , osy_transazioni.assigned_user_id , osy_transazioni.name  , jt0.user_name assigned_user_name , jt0.created_by assigned_user_name_owner  , 'Users' assigned_user_name_mod, osy_transazioni.created_by  FROM osy_transazioni   LEFT JOIN  users jt0 ON osy_transazioni.assigned_user_id=jt0.id AND jt0.deleted=0
+
+ AND jt0.deleted=0 where osy_transazioni.deleted=0 ORDER BY osy_transazioni.date_entered DESC LIMIT 0,21: MySQL error 1146: Table 'suitecrm.osy_transazioni' doesn't exist
+Thu Aug 29 15:16:48 2019 [17609][1][FATAL] [ERROR] Failed to remove bean to index
+Thu Aug 29 15:16:48 2019 [17609][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_transazioni))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_transazioni))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_transazioni), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_transazioni', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('efb1334e-ccf2-3...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu Aug 29 15:16:48 2019 [17609][1][FATAL] [ERROR] Failed to remove bean to index
+Thu Aug 29 15:16:48 2019 [17609][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_transazioni))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_transazioni))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_transazioni), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_transazioni', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('6d35da3b-40c8-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu Aug 29 15:16:49 2019 [17609][1][FATAL] [ERROR] Failed to remove bean to index
+Thu Aug 29 15:16:49 2019 [17609][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_transazioni))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_transazioni))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_transazioni), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_transazioni', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('badcf7db-25e4-d...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu Aug 29 15:24:17 2019 [19606][1][FATAL] Chart class not found.
+Thu Aug 29 15:24:18 2019 [21420][1][FATAL] Chart class not found.
+Thu Aug 29 16:08:34 2019 [18094][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 16:08:34 2019 [18094][1][FATAL] Exception in Controller: Error retrieving record. This record may be deleted or you may not be authorized to view it.
+Thu Aug 29 16:08:34 2019 [18094][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/MVC/View/views/view.detail.php(102): sugar_die('Error retrievin...')
+#1 /var/www/html/suite_7117/include/MVC/View/SugarView.php(226): ViewDetail->display()
+#2 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(435): SugarView->process()
+#3 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(375): SugarController->processView()
+#4 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#5 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#6 {main}
+Thu Aug 29 16:08:40 2019 [24240][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 16:08:40 2019 [24240][1][FATAL] Exception in Controller: Error retrieving record. This record may be deleted or you may not be authorized to view it.
+Thu Aug 29 16:08:40 2019 [24240][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/MVC/View/views/view.detail.php(102): sugar_die('Error retrievin...')
+#1 /var/www/html/suite_7117/include/MVC/View/SugarView.php(226): ViewDetail->display()
+#2 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(435): SugarView->process()
+#3 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(375): SugarController->processView()
+#4 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#5 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#6 {main}
+Thu Aug 29 16:52:08 2019 [24454][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 16:52:08 2019 [24454][1][FATAL] Exception in Controller: Subpanel was not defined
+Thu Aug 29 16:52:08 2019 [24454][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/SubPanel/SubPanelViewer.php(61): sugar_die('Subpanel was no...')
+#1 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(1087): require_once('/var/www/html/s...')
+#2 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handleActionMaps()
+#3 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#4 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#5 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#6 {main}
+Thu Aug 29 16:54:15 2019 [23694][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Thu Aug 29 16:54:15 2019 [23694][1][FATAL] Exception in Controller: Subpanel was not defined
+Thu Aug 29 16:54:15 2019 [23694][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/SubPanel/SubPanelViewer.php(61): sugar_die('Subpanel was no...')
+#1 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(1087): require_once('/var/www/html/s...')
+#2 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handleActionMaps()
+#3 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#4 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#5 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#6 {main}
+Thu Aug 29 17:16:57 2019 [28359][1][FATAL] [ERROR] Failed to remove bean to index
+Thu Aug 29 17:16:57 2019 [28359][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_transazioni))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_transazioni))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_transazioni), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_transazioni', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('bb040ef7-ebb8-e...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Thu Aug 29 17:30:04 2019 [29032][1][FATAL] Undefined index: module
+Thu Aug 29 17:30:04 2019 [29032][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:30:04 2019 [29032][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:30:19 2019 [29163][1][FATAL] Undefined index: module
+Thu Aug 29 17:30:19 2019 [29163][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:30:19 2019 [29163][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:30:23 2019 [28608][1][FATAL] Undefined index: module
+Thu Aug 29 17:30:23 2019 [28608][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:30:23 2019 [28608][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:30:45 2019 [29507][1][FATAL] Undefined index: module
+Thu Aug 29 17:30:45 2019 [29507][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:30:45 2019 [29507][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:30:52 2019 [29507][1][FATAL] Undefined index: module
+Thu Aug 29 17:30:52 2019 [29507][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:30:52 2019 [29507][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:32:03 2019 [29507][1][FATAL] Undefined index: module
+Thu Aug 29 17:32:03 2019 [29507][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:32:03 2019 [29507][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:36:42 2019 [27440][1][FATAL] Undefined index: module
+Thu Aug 29 17:36:42 2019 [27440][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:36:42 2019 [27440][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:37:07 2019 [27921][1][FATAL] Undefined index: module
+Thu Aug 29 17:37:07 2019 [27921][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:37:07 2019 [27921][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:49:37 2019 [27921][1][FATAL] Undefined index: module
+Thu Aug 29 17:49:37 2019 [27921][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:49:37 2019 [27921][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:49:42 2019 [29032][1][FATAL] Undefined index: module
+Thu Aug 29 17:49:42 2019 [29032][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:49:42 2019 [29032][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:49:46 2019 [27921][1][FATAL] Undefined index: module
+Thu Aug 29 17:49:46 2019 [27921][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:49:46 2019 [27921][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:49:59 2019 [29441][1][FATAL] Undefined index: module
+Thu Aug 29 17:49:59 2019 [29441][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:49:59 2019 [29441][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:50:08 2019 [29441][1][FATAL] Undefined index: module
+Thu Aug 29 17:50:08 2019 [29441][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Thu Aug 29 17:50:08 2019 [29441][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Thu Aug 29 17:58:30 2019 [29980][1][FATAL] Chart class not found.
+Thu Aug 29 17:58:30 2019 [30170][1][FATAL] Chart class not found.
+Thu Aug 29 17:58:33 2019 [27190][1][FATAL] Chart class not found.
+Thu Aug 29 17:58:34 2019 [30537][1][FATAL] Chart class not found.
+Thu Aug 29 17:59:57 2019 [31109][1][FATAL] Chart class not found.
+Thu Aug 29 17:59:57 2019 [29032][1][FATAL] Chart class not found.
+Thu Aug 29 17:59:58 2019 [27190][1][FATAL] Chart class not found.
+Fri Aug 30 08:59:52 2019 [5385][1][FATAL] Chart class not found.
+Fri Aug 30 08:59:54 2019 [4792][1][FATAL] Chart class not found.
+Fri Aug 30 09:12:59 2019 [6345][1][FATAL] Chart class not found.
+Fri Aug 30 09:12:59 2019 [4792][1][FATAL] Chart class not found.
+Fri Aug 30 09:13:06 2019 [5389][1][FATAL] Chart class not found.
+Fri Aug 30 09:13:07 2019 [6405][1][FATAL] Chart class not found.
+Fri Aug 30 09:13:57 2019 [5389][1][FATAL] Chart class not found.
+Fri Aug 30 09:13:58 2019 [5858][1][FATAL] Chart class not found.
+Fri Aug 30 09:18:19 2019 [4796][1][FATAL] Chart class not found.
+Fri Aug 30 09:18:20 2019 [6931][1][FATAL] Chart class not found.
+Fri Aug 30 09:18:21 2019 [6963][1][FATAL] Chart class not found.
+Fri Aug 30 09:20:25 2019 [6931][1][FATAL] Mysqli_query failed.
+Fri Aug 30 09:20:25 2019 [6931][1][FATAL]  Query Failed: INSERT INTO contacts_cstm (id_c ,jjwg_maps_lat_c ,jjwg_maps_lng_c ,bilancio_c ) VALUES ('7ad8f93c-d5ca-b819-4e36-5d68ce2296da' ,0 ,0 ,200 ): MySQL error 1062: Duplicate entry '7ad8f93c-d5ca-b819-4e36-5d68ce2296da' for key 'PRIMARY'
+Fri Aug 30 09:20:25 2019 [6931][1][FATAL] Mysqli_query failed.
+Fri Aug 30 09:20:25 2019 [6931][1][FATAL] Error inserting into table: contacts: Query Failed: INSERT INTO contacts (id,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id,salutation,first_name,last_name,title,department,do_not_call,phone_mobile,phone_work,phone_fax,primary_address_street,primary_address_city,primary_address_state,primary_address_postalcode,primary_address_country,alt_address_street,alt_address_city,alt_address_state,alt_address_postalcode,alt_address_country,lead_source,reports_to_id,campaign_id,portal_user_type)
+					VALUES ('7ad8f93c-d5ca-b819-4e36-5d68ce2296da','2019-08-30 07:20:20','2019-08-30 07:20:20','1','1','',0,'1','','','dpo\'jswpoa','','',0,'','','','','','','','','','','','','','','','','Single'): MySQL error 1062: Duplicate entry '7ad8f93c-d5ca-b819-4e36-5d68ce2296da' for key 'PRIMARY'
+Fri Aug 30 09:20:25 2019 [6931][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Fri Aug 30 09:20:25 2019 [6931][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Fri Aug 30 09:20:25 2019 [6931][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 106...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO con...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(Contact))
+#5 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#6 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#7 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#8 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#9 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#10 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#11 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#12 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#13 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#14 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#15 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#16 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#17 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#18 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#19 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#20 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#21 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#22 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#23 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#24 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#25 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#26 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#27 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#28 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#29 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#30 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#31 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#32 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#33 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#34 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#35 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#36 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#37 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#38 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#39 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#40 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#41 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#42 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#43 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#44 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#45 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#46 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#47 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#48 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#49 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#50 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#51 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#52 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#53 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#54 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#55 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#56 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#57 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#58 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#59 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#60 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#61 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#62 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#63 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#64 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#65 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#66 /var/www/html/suite_7117/modules/Contacts/ContactFormBase.php(592): Person->save(false)
+#67 /var/www/html/suite_7117/modules/Contacts/Save.php(54): ContactFormBase->handleSave('', true, false)
+#68 /var/www/html/suite_7117/include/MVC/View/SugarView.php(834): include_once('/var/www/html/s...')
+#69 /var/www/html/suite_7117/include/MVC/View/views/view.classic.php(72): SugarView->includeClassicFile('modules/Contact...')
+#70 /var/www/html/suite_7117/include/MVC/View/SugarView.php(226): ViewClassic->display()
+#71 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(435): SugarView->process()
+#72 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(375): SugarController->processView()
+#73 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#74 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#75 {main}
+Fri Aug 30 09:21:15 2019 [6849][1][FATAL] Mysqli_query failed.
+Fri Aug 30 09:21:15 2019 [6849][1][FATAL]  Query Failed: INSERT INTO contacts_cstm (id_c ,jjwg_maps_lat_c ,jjwg_maps_lng_c ,bilancio_c ) VALUES ('4f6e00be-e8ae-4ee9-d933-5d68cead90a4' ,0 ,0 ,200 ): MySQL error 1062: Duplicate entry '4f6e00be-e8ae-4ee9-d933-5d68cead90a4' for key 'PRIMARY'
+Fri Aug 30 09:21:15 2019 [6849][1][FATAL] Mysqli_query failed.
+Fri Aug 30 09:21:15 2019 [6849][1][FATAL] Error inserting into table: contacts: Query Failed: INSERT INTO contacts (id,date_entered,date_modified,modified_user_id,created_by,description,deleted,assigned_user_id,salutation,first_name,last_name,title,department,do_not_call,phone_mobile,phone_work,phone_fax,primary_address_street,primary_address_city,primary_address_state,primary_address_postalcode,primary_address_country,alt_address_street,alt_address_city,alt_address_state,alt_address_postalcode,alt_address_country,lead_source,reports_to_id,campaign_id,portal_user_type)
+					VALUES ('4f6e00be-e8ae-4ee9-d933-5d68cead90a4','2019-08-30 07:21:09','2019-08-30 07:21:09','1','1','',0,'1','','','DASAFASFAS','','',0,'','','','','','','','','','','','','','','','','Single'): MySQL error 1062: Duplicate entry '4f6e00be-e8ae-4ee9-d933-5d68cead90a4' for key 'PRIMARY'
+Fri Aug 30 09:21:15 2019 [6849][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Fri Aug 30 09:21:15 2019 [6849][1][FATAL] Exception in Controller: Database failure. Please refer to suitecrm.log for details.
+Fri Aug 30 09:21:15 2019 [6849][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/include/database/DBManager.php(353): sugar_die('Database failur...')
+#1 /var/www/html/suite_7117/include/database/DBManager.php(328): DBManager->registerError('Error inserting...', 'MySQL error 106...', true)
+#2 /var/www/html/suite_7117/include/database/MysqliManager.php(179): DBManager->checkError('Error inserting...', true)
+#3 /var/www/html/suite_7117/include/database/DBManager.php(519): MysqliManager->query('INSERT INTO con...', true, 'Error inserting...')
+#4 /var/www/html/suite_7117/data/SugarBean.php(2411): DBManager->insert(Object(Contact))
+#5 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#6 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#7 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#8 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#9 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#10 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#11 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#12 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#13 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#14 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#15 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#16 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#17 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#18 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#19 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#20 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#21 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#22 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#23 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#24 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#25 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#26 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#27 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#28 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#29 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#30 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#31 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#32 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#33 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#34 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#35 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#36 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#37 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#38 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#39 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#40 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#41 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#42 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#43 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#44 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#45 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#46 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#47 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#48 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#49 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#50 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#51 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#52 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#53 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#54 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#55 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#56 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#57 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#58 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#59 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#60 /var/www/html/suite_7117/custom/modules/Contacts/logic_hooks2.php(12): Person->save()
+#61 /var/www/html/suite_7117/include/utils/LogicHook.php(272): Class_osy->method_osy(Object(Contact), 'before_save', Array)
+#62 /var/www/html/suite_7117/include/utils/LogicHook.php(208): LogicHook->process_hooks(Array, 'before_save', Array)
+#63 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'before_save', Array)
+#64 /var/www/html/suite_7117/data/SugarBean.php(2375): SugarBean->call_custom_logic('before_save', Array)
+#65 /var/www/html/suite_7117/include/SugarObjects/templates/person/Person.php(200): SugarBean->save(false)
+#66 /var/www/html/suite_7117/modules/Contacts/ContactFormBase.php(592): Person->save(false)
+#67 /var/www/html/suite_7117/modules/Contacts/Save.php(54): ContactFormBase->handleSave('', true, false)
+#68 /var/www/html/suite_7117/include/MVC/View/SugarView.php(834): include_once('/var/www/html/s...')
+#69 /var/www/html/suite_7117/include/MVC/View/views/view.classic.php(72): SugarView->includeClassicFile('modules/Contact...')
+#70 /var/www/html/suite_7117/include/MVC/View/SugarView.php(226): ViewClassic->display()
+#71 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(435): SugarView->process()
+#72 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(375): SugarController->processView()
+#73 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#74 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#75 {main}
+Fri Aug 30 09:25:49 2019 [5404][1][FATAL] Chart class not found.
+Fri Aug 30 09:25:49 2019 [7401][1][FATAL] Chart class not found.
+Fri Aug 30 09:25:50 2019 [4795][1][FATAL] Chart class not found.
+Fri Aug 30 09:54:02 2019 [9132][1][FATAL] Undefined index: module
+Fri Aug 30 09:54:02 2019 [9132][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Fri Aug 30 09:54:02 2019 [9132][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Fri Aug 30 10:26:14 2019 [10817][1][FATAL] Undefined index: module
+Fri Aug 30 10:26:14 2019 [10817][1][FATAL] Invalid or missing SubPanelDefinition property: subpanel_name
+Fri Aug 30 10:26:14 2019 [10817][1][FATAL] Failed to load original or custom subpanel data for contacts_osy_Supplies in 
+Fri Aug 30 10:54:34 2019 [11566][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 10:54:34 2019 [11566][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('97d219f9-7e72-7...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 11:00:10 2019 [11323][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 11:00:10 2019 [11323][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('903d9a7c-734f-5...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 11:01:01 2019 [6405][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 11:01:01 2019 [6405][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('6001c7e7-af90-7...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 11:01:08 2019 [6405][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 11:01:08 2019 [6405][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('6001c7e7-af90-7...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 11:07:14 2019 [14107][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 11:07:14 2019 [14107][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('51b4de15-9e20-8...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 11:15:14 2019 [11149][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 11:15:14 2019 [11149][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('441eb429-bc79-6...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 11:22:08 2019 [11149][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 11:22:08 2019 [11149][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('9b8adb9d-c7c4-8...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 11:22:44 2019 [14107][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 11:22:44 2019 [14107][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('dc376370-5b14-2...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 11:23:18 2019 [14718][1][FATAL] Chart class not found.
+Fri Aug 30 11:23:19 2019 [14907][1][FATAL] Chart class not found.
+Fri Aug 30 12:17:49 2019 [14907][1][FATAL] Chart class not found.
+Fri Aug 30 12:17:50 2019 [15065][1][FATAL] Chart class not found.
+Fri Aug 30 14:28:04 2019 [14701][1][FATAL] Chart class not found.
+Fri Aug 30 14:28:05 2019 [20050][1][FATAL] Chart class not found.
+Fri Aug 30 14:29:39 2019 [20080][1][FATAL] Mysqli_query failed.
+Fri Aug 30 14:29:39 2019 [20080][1][FATAL]  Query Failed: select * from contacts_cstm
+inner join contacts_osy_contocorrente_1_c
+on contacts_osy_contocorrente_1_c.contacts_osy_contocorrente_1contacts_ida = contacts_cstm.id_c
+and deleted =1
+where contacts_osy_contocorrente_1_c.contacts_osy_contocorrente_1osy_contocorrente_idb =`e070f10e-1c67-cc9f-6a96-5d68e9e1ab73`: MySQL error 1054: Unknown column 'e070f10e-1c67-cc9f-6a96-5d68e9e1ab73' in 'where clause'
+Fri Aug 30 14:29:39 2019 [20080][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 14:29:39 2019 [20080][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 14:30:11 2019 [14701][1][FATAL] Chart class not found.
+Fri Aug 30 14:40:14 2019 [20681][1][FATAL] Mysqli_query failed.
+Fri Aug 30 14:40:14 2019 [20681][1][FATAL]  Query Failed: select * from contacts_cstm as cc
+                inner join contacts_osy_contocorrente_1_c as coc
+                on coc.contacts_osy_contocorrente_1contacts_ida = cc.id_c and coc.deleted =1
+                where coc.contacts_osy_contocorrente_1osy_contocorrente_idb =`e070f10e-1c67-cc9f-6a96-5d68e9e1ab73`: MySQL error 1054: Unknown column 'e070f10e-1c67-cc9f-6a96-5d68e9e1ab73' in 'where clause'
+Fri Aug 30 14:40:14 2019 [20681][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 14:40:14 2019 [20681][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 14:44:35 2019 [20681][1][FATAL] Mysqli_query failed.
+Fri Aug 30 14:44:35 2019 [20681][1][FATAL]  Query Failed: select * from contacts_cstm as cc
+                inner join contacts_osy_contocorrente_1_c as coc
+                on coc.contacts_osy_contocorrente_1contacts_ida = cc.id_c and coc.deleted =1
+                where coc.contacts_osy_contocorrente_1osy_contocorrente_idb =`e070f10e-1c67-cc9f-6a96-5d68e9e1ab73`: MySQL error 1054: Unknown column 'e070f10e-1c67-cc9f-6a96-5d68e9e1ab73' in 'where clause'
+Fri Aug 30 14:44:35 2019 [20681][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 14:44:35 2019 [20681][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 14:48:43 2019 [21238][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 14:48:43 2019 [21238][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 14:54:45 2019 [21238][1][FATAL] Mysqli_query failed.
+Fri Aug 30 14:54:45 2019 [21238][1][FATAL]  Query Failed: select * from contacts_cstm as cc
+                inner join contacts_osy_contocorrente_1_c as coc
+                on coc.contacts_osy_contocorrente_1contacts_ida = cc.id_c and coc.deleted =1
+                where coc.contacts_osy_contocorrente_1osy_contocorrente_idb =`e070f10e-1c67-cc9f-6a96-5d68e9e1ab73`: MySQL error 1054: Unknown column 'e070f10e-1c67-cc9f-6a96-5d68e9e1ab73' in 'where clause'
+Fri Aug 30 14:54:45 2019 [21238][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 14:54:45 2019 [21238][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 14:58:16 2019 [22642][1][FATAL] Mysqli_query failed.
+Fri Aug 30 14:58:16 2019 [22642][1][FATAL]  Query Failed: select * from contacts_cstm as cc
+                inner join contacts_osy_contocorrente_1_c as coc
+                on coc.contacts_osy_contocorrente_1contacts_ida = cc.id_c and coc.deleted =1
+                where coc.contacts_osy_contocorrente_1osy_contocorrente_idb =`e070f10e-1c67-cc9f-6a96-5d68e9e1ab73`: MySQL error 1054: Unknown column 'e070f10e-1c67-cc9f-6a96-5d68e9e1ab73' in 'where clause'
+Fri Aug 30 14:58:16 2019 [22642][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 14:58:16 2019 [22642][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 15:01:11 2019 [22900][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 15:01:11 2019 [22900][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 15:04:42 2019 [22763][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 15:04:42 2019 [22763][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 15:06:24 2019 [23198][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 15:06:24 2019 [23198][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 15:10:52 2019 [22902][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Aug 30 15:10:52 2019 [22902][1][FATAL] [ERROR] exception 'SuiteCRM\Search\Exceptions\SearchException' with message 'Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration.' in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(osy_Contocorrente))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(osy_Contocorrente))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(osy_Contocorrente), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('osy_Contocorren...', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e070f10e-1c67-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Fri Aug 30 16:05:46 2019 [24532][1][FATAL] Chart class not found.
+Fri Aug 30 16:05:47 2019 [24389][1][FATAL] Chart class not found.
+Fri Aug 30 16:05:54 2019 [25023][1][FATAL] Chart class not found.
+Fri Aug 30 16:05:55 2019 [24802][1][FATAL] Chart class not found.
+Fri Aug 30 16:50:07 2019 [12803][1][FATAL] Chart class not found.
+Mon Sep  2 09:13:58 2019 [4151][1][FATAL] Chart class not found.
+Mon Sep  2 09:13:59 2019 [4686][1][FATAL] Chart class not found.
+Mon Sep  2 09:59:09 2019 [5739][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 09:59:09 2019 [5739][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Lead))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Lead))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Lead), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Leads', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('a767d120-939a-0...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Mon Sep  2 10:59:42 2019 [9841][1][FATAL] Chart class not found.
+Mon Sep  2 10:59:42 2019 [6912][1][FATAL] Chart class not found.
+Mon Sep  2 10:59:56 2019 [4809][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 10:59:56 2019 [4809][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Lead))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Lead))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Lead), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Leads', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('e5416463-fe2c-5...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Mon Sep  2 11:49:55 2019 [13404][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Mon Sep  2 11:49:55 2019 [13404][1][FATAL] Exception in Controller: Unauthorized access to this area.
+Mon Sep  2 11:49:55 2019 [13404][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/modules/Leads/views/view.showduplicates.php(63): sugar_die('Unauthorized ac...')
+#1 /var/www/html/suite_7117/include/MVC/View/SugarView.php(226): ViewShowDuplicates->display()
+#2 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(435): SugarView->process()
+#3 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(375): SugarController->processView()
+#4 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#5 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#6 {main}
+Mon Sep  2 12:28:11 2019 [13415][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 12:28:11 2019 [13415][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Lead))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Lead))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Lead), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Leads', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('8285eb94-992d-a...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Mon Sep  2 12:29:04 2019 [14884][1][FATAL] error loading relationship accounts_opportunities_1accounts_ida
+Mon Sep  2 12:29:05 2019 [14884][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 12:29:05 2019 [14884][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Opportunity))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Opportunity))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Opportunity), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Opportunities', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('440fbcb0-50ad-a...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Mon Sep  2 12:38:47 2019 [16836][1][FATAL] Exception handling in /var/www/html/suite_7117/include/MVC/Controller/SugarController.php:400
+Mon Sep  2 12:38:47 2019 [16836][1][FATAL] Exception in Controller: Unauthorized access to this area.
+Mon Sep  2 12:38:47 2019 [16836][1][FATAL] backtrace:
+#0 /var/www/html/suite_7117/modules/Leads/views/view.showduplicates.php(63): sugar_die('Unauthorized ac...')
+#1 /var/www/html/suite_7117/include/MVC/View/SugarView.php(226): ViewShowDuplicates->display()
+#2 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(435): SugarView->process()
+#3 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(375): SugarController->processView()
+#4 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#5 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#6 {main}
+Mon Sep  2 12:41:10 2019 [17822][1][FATAL] error loading relationship accounts_opportunities_1accounts_ida
+Mon Sep  2 12:41:11 2019 [17822][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 12:41:11 2019 [17822][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Opportunity))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Opportunity))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Opportunity), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Opportunities', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('9d14a739-e6b0-c...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Mon Sep  2 12:41:21 2019 [13623][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 12:41:21 2019 [13623][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Lead))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Lead))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Lead), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Leads', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('474c49de-3a3e-8...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Mon Sep  2 12:42:13 2019 [13623][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 12:42:13 2019 [13623][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Lead))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Lead))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Lead), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Leads', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('a8412dc1-0f10-a...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Mon Sep  2 12:43:20 2019 [13451][1][FATAL] error loading relationship accounts_opportunities_1accounts_ida
+Mon Sep  2 12:43:21 2019 [13451][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 12:43:21 2019 [13451][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Opportunity))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Opportunity))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Opportunity), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Opportunities', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('4480f116-e2d5-e...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Mon Sep  2 12:43:21 2019 [13451][1][FATAL] error loading relationship accounts_opportunities_1accounts_ida
+Mon Sep  2 12:43:21 2019 [13451][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 12:43:21 2019 [13451][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Opportunity))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Opportunity))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Opportunity), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Opportunities', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('e126ebc3-6bc4-b...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Mon Sep  2 12:46:44 2019 [18495][1][FATAL] error loading relationship accounts_opportunities_1accounts_ida
+Mon Sep  2 12:46:45 2019 [18495][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 12:46:45 2019 [18495][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Opportunity))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Opportunity))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Opportunity), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Opportunities', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('a63529a8-572a-3...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Mon Sep  2 14:31:52 2019 [18740][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 14:31:52 2019 [18740][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Lead))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Lead))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Lead), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Leads', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('20a8eae4-5b74-3...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Mon Sep  2 14:34:02 2019 [18351][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 14:34:02 2019 [18351][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Lead))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Lead))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Lead), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Leads', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('7e1f394a-df27-1...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Mon Sep  2 14:37:10 2019 [18879][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 14:37:10 2019 [18879][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Task))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Task))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Task), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Tasks', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('e974c974-cd93-8...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Mon Sep  2 14:52:46 2019 [13451][1][FATAL] SugarPHPMailer encountered an error: Invalid address:  (to): 0
+Mon Sep  2 14:52:46 2019 [13451][1][FATAL] SugarPHPMailer encountered an error: You must provide at least one recipient email address.
+Mon Sep  2 14:52:46 2019 [13451][1][FATAL] SugarPHPMailer encountered an error: You must provide at least one recipient email address.
+Mon Sep  2 14:54:06 2019 [13451][1][FATAL] SugarPHPMailer encountered an error: Invalid address:  (to): 
+Mon Sep  2 14:54:18 2019 [23348][1][FATAL] error loading relationship project_resource
+Mon Sep  2 14:54:18 2019 [23348][1][FATAL] error loading relationship am_projecttemplates_resources
+Mon Sep  2 14:54:19 2019 [23348][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 14:54:19 2019 [23348][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Contact))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Contact))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Contact), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('d35e8843-ddf7-3...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Mon Sep  2 14:54:37 2019 [25237][1][FATAL] error loading relationship project_resource
+Mon Sep  2 14:54:37 2019 [25237][1][FATAL] error loading relationship am_projecttemplates_resources
+Mon Sep  2 14:54:38 2019 [25237][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 14:54:38 2019 [25237][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Contact))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Contact))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Contact), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('bfce2d32-a878-7...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Mon Sep  2 14:54:51 2019 [18859][1][FATAL] error loading relationship project_resource
+Mon Sep  2 14:54:51 2019 [18859][1][FATAL] error loading relationship am_projecttemplates_resources
+Mon Sep  2 14:54:51 2019 [18859][1][FATAL] [ERROR] Failed to remove bean to index
+Mon Sep  2 14:54:51 2019 [18859][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Contact))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Contact))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Contact), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MassUpdate.php(286): SugarBean->mark_deleted('50de416a-d6d2-9...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#14 {main}
+Tue Sep  3 09:02:40 2019 [3841][1][FATAL] Chart class not found.
+Tue Sep  3 09:02:43 2019 [1330][1][FATAL] Chart class not found.
+Tue Sep  3 09:58:33 2019 [4317][1][FATAL] LHS and RHS must be beans
+Tue Sep  3 10:01:53 2019 [8609][1][FATAL] LHS and RHS must be beans
+Tue Sep  3 10:04:27 2019 [8522][1][FATAL] LHS and RHS must be beans
+Tue Sep  3 11:05:21 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:21 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('d82d3e59-2926-8...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('d82d3e59-2926-8...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:21 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:21 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('bcb75073-d99a-0...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('bcb75073-d99a-0...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:22 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:22 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('f4950c21-9d22-6...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('f4950c21-9d22-6...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:22 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:22 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('9d9e7e76-d543-4...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('9d9e7e76-d543-4...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:23 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:23 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('e04b8045-95a2-2...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('e04b8045-95a2-2...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:24 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:24 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('9cad2735-73ab-9...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('9cad2735-73ab-9...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:24 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:24 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('e17b069f-9fdf-2...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('e17b069f-9fdf-2...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:25 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:25 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('83bbf62c-5ae2-a...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('83bbf62c-5ae2-a...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:26 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:26 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('d82d3e59-2926-8...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('d82d3e59-2926-8...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:27 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:27 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('bcb75073-d99a-0...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('bcb75073-d99a-0...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:28 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:28 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('f4950c21-9d22-6...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('f4950c21-9d22-6...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:28 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:28 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('9d9e7e76-d543-4...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('9d9e7e76-d543-4...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:29 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:29 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('e04b8045-95a2-2...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('e04b8045-95a2-2...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:30 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:30 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('9cad2735-73ab-9...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('9cad2735-73ab-9...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:30 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:30 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('e17b069f-9fdf-2...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('e17b069f-9fdf-2...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:05:31 2019 [4378][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:05:31 2019 [4378][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ProspectList))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ProspectList))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ProspectList), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('ProspectLists', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/modules/ProspectLists/ProspectList.php(443): SugarBean->mark_deleted('83bbf62c-5ae2-a...')
+#7 /var/www/html/suite_7117/include/MassUpdate.php(286): ProspectList->mark_deleted('83bbf62c-5ae2-a...')
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#11 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#12 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#13 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#14 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#15 {main}
+Tue Sep  3 11:38:58 2019 [16784][1][FATAL] error loading relationship project_resource
+Tue Sep  3 11:38:58 2019 [16784][1][FATAL] error loading relationship am_projecttemplates_resources
+Tue Sep  3 11:38:58 2019 [16784][1][FATAL] [ERROR] Failed to remove bean to index
+Tue Sep  3 11:38:58 2019 [16784][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Contact))
+#1 /var/www/html/suite_7117/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Contact))
+#2 /var/www/html/suite_7117/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Contact), 'after_delete', Array)
+#3 /var/www/html/suite_7117/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/suite_7117/data/SugarBean.php(3112): LogicHook->call_custom_logic('Contacts', 'after_delete', Array)
+#5 /var/www/html/suite_7117/data/SugarBean.php(5244): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('50149c57-48c6-9...')
+#7 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/suite_7117/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/suite_7117/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/suite_7117/index.php(52): SugarApplication->execute()
+#13 {main}
+Tue Sep  3 13:01:14 2019 [16828][1][FATAL] Chart class not found.
+Tue Sep  3 13:01:16 2019 [21039][1][FATAL] Chart class not found.

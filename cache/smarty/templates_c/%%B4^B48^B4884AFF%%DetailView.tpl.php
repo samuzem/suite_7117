@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.31, created on 2019-08-27 09:12:16
+<?php /* Smarty version 2.6.31, created on 2019-09-03 17:12:11
          compiled from cache/themes/SuiteP/modules/Contacts/DetailView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 46, false),array('function', 'sugar_translate', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 55, false),array('function', 'counter', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 143, false),array('function', 'sugar_phone', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 221, false),array('function', 'sugar_ajax_url', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 365, false),array('modifier', 'strip_semicolon', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 136, false),array('modifier', 'escape', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 473, false),array('modifier', 'url2html', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 473, false),array('modifier', 'nl2br', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 473, false),array('modifier', 'strip_tags', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 484, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 45, false),array('function', 'sugar_translate', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 54, false),array('function', 'counter', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 141, false),array('function', 'sugar_phone', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 254, false),array('function', 'sugar_ajax_url', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 363, false),array('function', 'sugar_number_format', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 683, false),array('modifier', 'strip_semicolon', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 134, false),array('modifier', 'escape', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 471, false),array('modifier', 'url2html', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 471, false),array('modifier', 'nl2br', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 471, false),array('modifier', 'strip_tags', 'cache/themes/SuiteP/modules/Contacts/DetailView.tpl', 482, false),)), $this); ?>
 
 
 <script language="javascript">
@@ -37,11 +37,6 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 " class="button primary" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.return_id.value='<?php echo $this->_tpl_vars['id']; ?>
 '; _form.action.value='EditView';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Edit" id="edit_button" value="<?php echo $this->_tpl_vars['APP']['LBL_EDIT_BUTTON_LABEL']; ?>
 "><?php endif; ?> 
-<?php if ($this->_tpl_vars['bean']->aclAccess('edit')): ?><input title="<?php echo $this->_tpl_vars['APP']['LBL_DUPLICATE_BUTTON_TITLE']; ?>
-" accessKey="<?php echo $this->_tpl_vars['APP']['LBL_DUPLICATE_BUTTON_KEY']; ?>
-" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.isDuplicate.value=true; _form.action.value='EditView'; _form.return_id.value='<?php echo $this->_tpl_vars['id']; ?>
-';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Duplicate" value="<?php echo $this->_tpl_vars['APP']['LBL_DUPLICATE_BUTTON_LABEL']; ?>
-" id="duplicate_button"><?php endif; ?> 
 <?php if ($this->_tpl_vars['bean']->aclAccess('delete')): ?><input title="<?php echo $this->_tpl_vars['APP']['LBL_DELETE_BUTTON_TITLE']; ?>
 " accessKey="<?php echo $this->_tpl_vars['APP']['LBL_DELETE_BUTTON_KEY']; ?>
 " class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='ListView'; _form.action.value='Delete'; if(confirm('<?php echo $this->_tpl_vars['APP']['NTC_DELETE_CONFIRMATION']; ?>
@@ -149,11 +144,6 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 " class="button primary" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.return_id.value='<?php echo $this->_tpl_vars['id']; ?>
 '; _form.action.value='EditView';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Edit" id="edit_button" value="<?php echo $this->_tpl_vars['APP']['LBL_EDIT_BUTTON_LABEL']; ?>
 "><?php endif; ?> </li>
-<li><?php if ($this->_tpl_vars['bean']->aclAccess('edit')): ?><input title="<?php echo $this->_tpl_vars['APP']['LBL_DUPLICATE_BUTTON_TITLE']; ?>
-" accessKey="<?php echo $this->_tpl_vars['APP']['LBL_DUPLICATE_BUTTON_KEY']; ?>
-" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='DetailView'; _form.isDuplicate.value=true; _form.action.value='EditView'; _form.return_id.value='<?php echo $this->_tpl_vars['id']; ?>
-';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Duplicate" value="<?php echo $this->_tpl_vars['APP']['LBL_DUPLICATE_BUTTON_LABEL']; ?>
-" id="duplicate_button"><?php endif; ?> </li>
 <li><?php if ($this->_tpl_vars['bean']->aclAccess('delete')): ?><input title="<?php echo $this->_tpl_vars['APP']['LBL_DELETE_BUTTON_TITLE']; ?>
 " accessKey="<?php echo $this->_tpl_vars['APP']['LBL_DELETE_BUTTON_KEY']; ?>
 " class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Contacts'; _form.return_action.value='ListView'; _form.action.value='Delete'; if(confirm('<?php echo $this->_tpl_vars['APP']['NTC_DELETE_CONFIRMATION']; ?>
@@ -213,26 +203,26 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 <div class="col-xs-12 col-sm-4 label col-1-label">
 
 
-<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_FIRST_NAME','module' => 'Contacts'), $this);?>
+<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_TITLE','module' => 'Contacts'), $this);?>
 <?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
 <?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="first_name"  >
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="title"  >
 
-<?php if (! $this->_tpl_vars['fields']['first_name']['hidden']): ?>
+<?php if (! $this->_tpl_vars['fields']['title']['hidden']): ?>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
 
 
-<?php if (strlen ( $this->_tpl_vars['fields']['first_name']['value'] ) <= 0): ?>
-<?php $this->assign('value', $this->_tpl_vars['fields']['first_name']['default_value']); ?>
+<?php if (strlen ( $this->_tpl_vars['fields']['title']['value'] ) <= 0): ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['title']['default_value']); ?>
 <?php else: ?>
-<?php $this->assign('value', $this->_tpl_vars['fields']['first_name']['value']); ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['title']['value']); ?>
 <?php endif; ?> 
-<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['first_name']['name']; ?>
-"><?php echo $this->_tpl_vars['fields']['first_name']['value']; ?>
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['title']['name']; ?>
+"><?php echo $this->_tpl_vars['fields']['title']['value']; ?>
 </span>
 <?php endif; ?>
 
@@ -297,6 +287,46 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 <div class="col-xs-12 col-sm-4 label col-1-label">
 
 
+<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_FIRST_NAME','module' => 'Contacts'), $this);?>
+<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
+<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+</div>
+
+
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="first_name"  >
+
+<?php if (! $this->_tpl_vars['fields']['first_name']['hidden']): ?>
+<?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
+
+
+<?php if (strlen ( $this->_tpl_vars['fields']['first_name']['value'] ) <= 0): ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['first_name']['default_value']); ?>
+<?php else: ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['first_name']['value']); ?>
+<?php endif; ?> 
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['first_name']['name']; ?>
+"><?php echo $this->_tpl_vars['fields']['first_name']['value']; ?>
+</span>
+<?php endif; ?>
+
+<div class="inlineEditIcon col-xs-hidden">
+<span class="suitepicon suitepicon-action-edit"></span>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
+
+
+<div class="col-xs-12 col-sm-4 label col-2-label">
+
+
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_OFFICE_PHONE','module' => 'Contacts'), $this);?>
 <?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
 <?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
@@ -325,13 +355,17 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 
 </div>
 
+</div>
+
+
+<div class="row detail-view-row">
 
 
 
 <div class="col-xs-12 col-sm-6 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-2-label">
+<div class="col-xs-12 col-sm-4 label col-1-label">
 
 
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_MOBILE_PHONE','module' => 'Contacts'), $this);?>
@@ -352,50 +386,6 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 <?php echo smarty_function_sugar_phone(array('value' => $this->_tpl_vars['phone_value'],'usa_format' => '0'), $this);?>
 
 <?php endif; ?>
-<?php endif; ?>
-
-<div class="inlineEditIcon col-xs-hidden">
-<span class="suitepicon suitepicon-action-edit"></span>
-</div>
-</div>
-
-
-</div>
-
-</div>
-
-
-<div class="row detail-view-row">
-
-
-
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
-
-
-<div class="col-xs-12 col-sm-4 label col-1-label">
-
-
-<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_TITLE','module' => 'Contacts'), $this);?>
-<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
-<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-</div>
-
-
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="title"  >
-
-<?php if (! $this->_tpl_vars['fields']['title']['hidden']): ?>
-<?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
-
-
-<?php if (strlen ( $this->_tpl_vars['fields']['title']['value'] ) <= 0): ?>
-<?php $this->assign('value', $this->_tpl_vars['fields']['title']['default_value']); ?>
-<?php else: ?>
-<?php $this->assign('value', $this->_tpl_vars['fields']['title']['value']); ?>
-<?php endif; ?> 
-<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['title']['name']; ?>
-"><?php echo $this->_tpl_vars['fields']['title']['value']; ?>
-</span>
 <?php endif; ?>
 
 <div class="inlineEditIcon col-xs-hidden">
@@ -453,10 +443,10 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 
 
 
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
+<div class="col-xs-12 col-sm-12 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-2 label col-1-label">
 
 
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCOUNT_NAME','module' => 'Contacts'), $this);?>
@@ -466,7 +456,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="relate" field="account_name"  >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="relate" field="account_name" colspan='3' >
 
 <?php if (! $this->_tpl_vars['fields']['account_name']['hidden']): ?>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
@@ -491,13 +481,17 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 
 </div>
 
+</div>
+
+
+<div class="row detail-view-row">
 
 
 
 <div class="col-xs-12 col-sm-6 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-2-label">
+<div class="col-xs-12 col-sm-4 label col-1-label">
 
 
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_FAX_PHONE','module' => 'Contacts'), $this);?>
@@ -528,17 +522,13 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 
 </div>
 
-</div>
-
-
-<div class="row detail-view-row">
 
 
 
-<div class="col-xs-12 col-sm-12 detail-view-row-item">
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-2 label col-1-label">
+<div class="col-xs-12 col-sm-4 label col-2-label">
 
 
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_EMAIL_ADDRESS','module' => 'Contacts'), $this);?>
@@ -548,7 +538,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 </div>
 
 
-<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="varchar" field="email1" colspan='3' >
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="email1"  >
 
 <?php if (! $this->_tpl_vars['fields']['email1']['hidden']): ?>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
@@ -574,10 +564,10 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 
 
 
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
+<div class="col-xs-12 col-sm-12 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-2 label col-1-label">
 
 
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_PRIMARY_ADDRESS','module' => 'Contacts'), $this);?>
@@ -587,7 +577,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="varchar" field="primary_address_street"  >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="varchar" field="primary_address_street" colspan='3' >
 
 <?php if (! $this->_tpl_vars['fields']['primary_address_street']['hidden']): ?>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
@@ -639,13 +629,17 @@ value="<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=((is_array(
 
 </div>
 
+</div>
+
+
+<div class="row detail-view-row">
 
 
 
 <div class="col-xs-12 col-sm-6 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-2-label">
+<div class="col-xs-12 col-sm-4 label col-1-label">
 
 
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_ALTERNATE_ADDRESS','module' => 'Contacts'), $this);?>
@@ -707,17 +701,13 @@ value="<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=((is_array(
 
 </div>
 
-</div>
-
-
-<div class="row detail-view-row">
 
 
 
 <div class="col-xs-12 col-sm-6 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-4 label col-2-label">
 
 
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_DESCRIPTION','module' => 'Contacts'), $this);?>
@@ -746,10 +736,84 @@ value="<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=((is_array(
 
 </div>
 
+</div>
+
+
+<div class="row detail-view-row">
 
 
 
 <div class="col-xs-12 col-sm-6 detail-view-row-item">
+
+
+<div class="col-xs-12 col-sm-4 label col-1-label">
+
+
+<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_MARKETING','module' => 'Contacts'), $this);?>
+<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
+<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+</div>
+
+
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="bool" field="marketing_c"  >
+
+<?php if (! $this->_tpl_vars['fields']['marketing_c']['hidden']): ?>
+<?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
+
+
+<?php if (strval ( $this->_tpl_vars['fields']['marketing_c']['value'] ) == '1' || strval ( $this->_tpl_vars['fields']['marketing_c']['value'] ) == 'yes' || strval ( $this->_tpl_vars['fields']['marketing_c']['value'] ) == 'on'): ?> 
+<?php $this->assign('checked', 'checked="checked"'); ?>
+<?php else: ?>
+<?php $this->assign('checked', ""); ?>
+<?php endif; ?>
+<input type="checkbox" class="checkbox" name="<?php echo $this->_tpl_vars['fields']['marketing_c']['name']; ?>
+" id="<?php echo $this->_tpl_vars['fields']['marketing_c']['name']; ?>
+" value="$fields.marketing_c.value" disabled="true" <?php echo $this->_tpl_vars['checked']; ?>
+>
+<?php endif; ?>
+
+<div class="inlineEditIcon col-xs-hidden">
+<span class="suitepicon suitepicon-action-edit"></span>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
+
+
+<div class="col-xs-12 col-sm-4 label col-2-label">
+
+
+<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_ASSIGNED_TO_NAME','module' => 'Contacts'), $this);?>
+<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
+<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+</div>
+
+
+<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="relate" field="assigned_user_name"  >
+
+<?php if (! $this->_tpl_vars['fields']['assigned_user_name']['hidden']): ?>
+<?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
+
+
+<span id="assigned_user_id" class="sugar_field" data-id-value="<?php echo $this->_tpl_vars['fields']['assigned_user_id']['value']; ?>
+"><?php echo $this->_tpl_vars['fields']['assigned_user_name']['value']; ?>
+</span>
+<?php endif; ?>
+
+<div class="inlineEditIcon col-xs-hidden">
+<span class="suitepicon suitepicon-action-edit"></span>
+</div>
+</div>
+
+
 </div>
 
 </div>
@@ -765,21 +829,23 @@ value="<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=((is_array(
 <div class="col-xs-12 col-sm-2 label col-1-label">
 
 
-<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_ASSIGNED_TO_NAME','module' => 'Contacts'), $this);?>
+<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_BILANCIO','module' => 'Contacts'), $this);?>
 <?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
 <?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
 </div>
 
 
-<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="relate" field="assigned_user_name" colspan='3' >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="decimal" field="bilancio_c" colspan='3' >
 
-<?php if (! $this->_tpl_vars['fields']['assigned_user_name']['hidden']): ?>
+<?php if (! $this->_tpl_vars['fields']['bilancio_c']['hidden']): ?>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
 
 
-<span id="assigned_user_id" class="sugar_field" data-id-value="<?php echo $this->_tpl_vars['fields']['assigned_user_id']['value']; ?>
-"><?php echo $this->_tpl_vars['fields']['assigned_user_name']['value']; ?>
+<span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['bilancio_c']['name']; ?>
+">
+<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['fields']['bilancio_c']['value'],'precision' => 8), $this);?>
+
 </span>
 <?php endif; ?>
 

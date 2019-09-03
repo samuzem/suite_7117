@@ -155,7 +155,11 @@ array (
             'name' => 'description',
             'label' => 'LBL_DESCRIPTION',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'marketing_c',
+            'label' => 'LBL_MARKETING',
+          ),
         ),
         7 => 
         array (
@@ -165,7 +169,24 @@ array (
             'label' => 'LBL_ASSIGNED_TO_NAME',
           ),
         ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'bilancio_c',
+            'label' => 'LBL_BILANCIO',
+          ),
+          1 => '',
+        ),
+          9 =>
+          array (
+              0 =>
+              array(
+                  'name'=> 'tipomarketing_c',
+                  'label'=> 'Tipo Marketing',
+              ),
       ),
+      ),    
       'LBL_PANEL_ADVANCED' => 
       array (
         0 => 
