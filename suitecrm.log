@@ -3342,3 +3342,5 @@ Stack trace:
 #13 {main}
 Tue Sep  3 13:01:14 2019 [16828][1][FATAL] Chart class not found.
 Tue Sep  3 13:01:16 2019 [21039][1][FATAL] Chart class not found.
+Wed Sep  4 09:01:00 2019 [3456][1][FATAL] Chart class not found.
+Wed Sep  4 09:01:02 2019 [3458][1][FATAL] Chart class not found.
